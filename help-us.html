@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <title>About</title>
+    <style>
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      li {
+        float: left;
+        font-family: Helvetica;
+      }
+
+      .tab-link {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      .tab-link:hover:not(.active) {
+        background-color: #111;
+      }
+
+      .active,
+      .btn:hover {
+        background-color: #82a0fb;
+      }
+
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      label {
+        font-family: Arial;
+        font-weight: bold;
+      }
+
+      input[type="text"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid rgb(204, 198, 198);
+        background-color: rgb(224, 219, 219);
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }
+
+      input[type="submit"] {
+        background-color: #527eff;
+        color: whitesmoke;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #8a7dd8;
+      }
+
+      .container {
+        border-radius: 5px;
+        background-color: white;
+        padding: 20px;
+      }
+
+      .footer-container {
+        background-color: #4d4dff;
+        padding-bottom: 4rem;
+      }
+
+      footer {
+        width: 80%;
+        height: 40vh;
+        color: #ffffff;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        padding: 70px 0;
+        text-align: left;
+      }
+
+      .footer-heading {
+        display: flex;
+        flex-direction: column;
+        margin-right: 4rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Navigation Bar-->
+    <header>
+      <ul>
+        <li><a class="tab-link" href="index.html">Home</a></li>
+        <li><a class="tab-link" href="about.html">About</a></li>
+        <li><a class="tab-link" href="contact-us.html">Contact Us</a></li>
+        <li><a class="tab-link active" href="help-us.html">Help Us</a></li>
+      </ul>
+    </header>
+    <!----------------->
+
+    <!--Forms-->
+
+    <div class="container" style="padding: 30px">
+      <form>
+        <div class="row">
+          <div class="col-25">
+            <label for="name">First & Last Name</label>
+          </div>
+          <div class="col-75">
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="First and Last Name"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="email">Email Address</label>
+          </div>
+          <div class="col-75">
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Email Address"
+            />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+            <label for="subject">Comment</label>
+          </div>
+          <div class="col-75">
+            <textarea
+              id="comment"
+              name="comment"
+              placeholder="Type your comment here..."
+              style="height: 200px"
+            ></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
+    <br/>
+
+    <!----------------->
+
+    <p style="font-size: 100px; text-align: center; padding: 10px; font-family: Arial; ">Thank You!!!</p>
+
+    <!--Footer-->
+    <div class="footer-container">
+      <footer>
+        <div class="footer-heading footer-1">
+          <h3>Branch List;</h3>
+          <pre>
+            Colombo
+            Gampaha
+            Kuruegala
+            Panadura
+            Galle
+            Kandy
+          </pre>
+        </div>
+        <div class="footer-heading footer-2">
+          <h3>Contact us</h3>
+          <pre>
+          Email address : walmart@gmail.com
+          Hotline : 0112887887
+        </pre
+          >
+        </div>
+      </footer>
+    </div>
+    <!----------------->
+  </body>
+</html>
